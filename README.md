@@ -1,7 +1,5 @@
 # .bash_profile
 
-## Some useful .bash_profile setup
-
 ```bash
 alias deletealldockerimages='docker rmi $(docker images -q)'
 

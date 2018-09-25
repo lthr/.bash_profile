@@ -32,4 +32,12 @@ alias npmglob='npm list -g --depth=0'
 alias uniqhistory='cat ~/.bash_history | sort | uniq > ~/.bash_history.uniq'
 alias vial='vi ~/.bash_aliases'
 alias vibr='vi ~/.bash_profile'
+
+# https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+alias gitstat='echo --- Commits in 2018: ; git shortlog -sn --all --no-merges --since="2018-01-01"'
+alias gitrecent='git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"'
+alias gitoverview='git log --all --since="yesterday" --oneline --no-merges'
+alias gitrecap='git log --all --oneline --no-merges --author=ekmlpe@danskespil.dk'
+alias gittoday='git log --since=00:00:00 --all --no-merges --oneline --author=ekmlpe@danskespil.dk'
 ```
+
